@@ -11,7 +11,7 @@ class HomeController extends Controller
         $latest_properties = Property::latest()->get()->take(4);
 
         return view ('welcome', [
-            'latest_properties' => $latest_properties
+            'latest_properties' => $latest_properties,
         ]);
     }
 }
